@@ -1,3 +1,6 @@
+# admin token file
+mytoken.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
