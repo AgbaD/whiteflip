@@ -1,6 +1,9 @@
 # admin token file
 mytoken.txt
 
+# practice folder
+cloud conv/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
