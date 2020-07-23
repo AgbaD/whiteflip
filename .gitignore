@@ -1,8 +1,7 @@
-# admin token file
+# self added
 mytoken.txt
-
-# practice folder
 cloud conv/
+*.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
