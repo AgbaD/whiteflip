@@ -20,5 +20,3 @@ def login(name, path=None):
 
     return key
 
-
-
