@@ -4,6 +4,7 @@
 from upload import Upload
 import os
 from entry import login
+import json
 
 
 def start():
@@ -22,8 +23,10 @@ def start():
 if __name__ == "__main__":
     key = start()
     a = Upload(key)
-    b = a.form()
+    path = input("Enter file path> ")
+    b = a.form(path)
     print(b)
+    
 
 
 

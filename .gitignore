@@ -2,6 +2,7 @@
 mytoken.txt
 cloud conv/
 *.json
+try.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
