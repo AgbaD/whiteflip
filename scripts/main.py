@@ -15,7 +15,7 @@ def start():
     key = ""
     if name.lower() == "toby":
         path = input("Enter full key path: ")
-        key = login(name, path)
+        key = login(name.lower(), path)
     else:
         key = login(name)
     return key

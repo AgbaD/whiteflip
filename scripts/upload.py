@@ -8,16 +8,22 @@ import json
 class RequestError(Exception):
     pass
 
+class KeyError(Exception):
+    pass
+
 class Upload:
 
     def __init__(self,key):
+        if not key:
+            raise KeyError("Key not found!")    
         self.key = key
         self.root = "https://api.cloudconvert.com/v2"
         self.token = "Bearer {}".format(self.key)
 
     def upload(self,file_path):
         # to make request for upload form 
-        path = "jobs"
+        session = requests.session()
+        path = "import/url"
         request_uri = "/".join([self.root,path])
 
         headers = {'Authorization': self.token, 
@@ -26,15 +32,11 @@ class Upload:
                     'User-Agent':'https://github.com/BlankGodd/whiteflip'}
         
         data = {
-                "tasks": {
-                    "import-1": {
-                        "operation": "import/upload",
-                        "file": file_path
-                    }
-                }
-            }
+            "url": "https://github.com/BlankGodd/whiteflip/blob/master/try.txt",
+            "filename": "try.txt"
+        }
         
-        response = requests.post(request_uri, include=data, 
+        response = session.post(request_uri, data=data, 
                     headers=headers)
         """if response.status_code not in range(200,300):
             return None"""

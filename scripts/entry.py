@@ -15,8 +15,10 @@ def login(name, path=None):
         path = os.path.join(pt,filename)
         os.chdir(cur)
 
-    with open(path, 'r') as tf:
-        key = tf.read()
-
+    try:
+        with open(path, 'r') as tf:
+            key = tf.read()
+    except:
+        return None
     return key
 
