@@ -5,4 +5,6 @@ A CLI to leveraging the cloudconvert API used converting between different file 
    - pdf
    - txt
    - docx
-   -
+   
+## Disclaimer
+Project put on hold :Crying Face:
