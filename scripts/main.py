@@ -24,8 +24,10 @@ if __name__ == "__main__":
     key = start()
     a = Upload(key)
     path = input("Enter file path> ")
-    b = a.form(path)
+    b,c= a.upload(path)
     print(b)
+    print()
+    print(c)
     
 
 
