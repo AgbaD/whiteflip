@@ -1,4 +1,4 @@
 # Whiteflip
 ## Disclaimer
-## Project put on hold :cry:
-API issues
+### Closed project :cry:
+Refer to [File-converter](https://github.com/BlankGodd/File-converter) to convert files
